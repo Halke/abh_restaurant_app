@@ -10,7 +10,7 @@ public class LoginPage extends PageBase {
     final static private String PAGE_URL_REGEX = "\\/login\\d*";
     final static private String CREATE_ACCOUNT_BUTTON_CSS = "form[class = 'login-register-form'] div h5 a[href= '/register']";
     final static private String EMAIL_INPUT_FIELD_CSS = "div[class='row'] input[id='email']";
-    final static private String PASSWORD_INPUT_FIELD_CSS = "div[class='row'] input[id='passwrd']";
+    final static private String PASSWORD_INPUT_FIELD_CSS = "div[class='row'] input[id='password']";
     final static private String LOGIN_BUTTON_CSS = "div[class='row'] div button[type='submit']";
 
     public LoginPage(WebDriver driver) {

@@ -23,10 +23,11 @@ import java.util.concurrent.TimeUnit;
 public class DriverSupport {
     private WebDriver driver;
     private Capabilities capabilities;
+    private String driverPath = "D:\\DevDays\\gecko\\geckodriver.exe";
 
     public WebDriver initDriver(String browser) {
         java.util.Properties p = new Properties();
-
+        System.setProperty("webdriver.gecko.driver", driverPath);
         if (browser.equals("firefox")) {
             FirefoxOptions options = new FirefoxOptions();
             options.addArguments("headless");
