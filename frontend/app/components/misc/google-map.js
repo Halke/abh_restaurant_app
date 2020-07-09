@@ -14,7 +14,7 @@ export default Component.extend({
   renderGoogleMap(container) {
     let options = {
       center: new window.google.maps.LatLng(43.9, 18),
-      zoom: 7
+      zoom: 5
     };
 
     let map = new window.google.maps.Map(container, options);
@@ -33,7 +33,7 @@ export default Component.extend({
             { lat: 44.773, lng: 18.907 }
           ];
 
-    const zoomBounds = new google.maps.LatLngBounds();
+    const zoomBounds = new window.google.maps.LatLngBounds();
     for (let coordiante in coords) {
       if (coords.hasOwnProperty(coordiante)) {
         zoomBounds.extend(
@@ -63,6 +63,7 @@ export default Component.extend({
     marker.setMap(map);
     this.set("marker", marker);
 
+
     const polygon = new google.maps.Polygon({
       paths: coords,
       strokeColor: "#fd6f60",
@@ -77,5 +78,6 @@ export default Component.extend({
 
     polygon.setMap(map);
     this.set("polygon", polygon);
+
   }
 });
