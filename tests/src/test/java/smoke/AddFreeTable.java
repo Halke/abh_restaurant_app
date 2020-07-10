@@ -42,7 +42,7 @@ public class AddFreeTable extends TestBase {
                 .checkMainText(HOME_HEADER_TEXT));
     }
 
-    //This should be refactored and split into more tests
+    //This should be refactored and split into more tests,
     @Test(priority = 3)
     public void navigateToAddTablesPage() throws InterruptedException{
         new HomePage(driver).openAdminDashboard(2);

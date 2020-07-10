@@ -10,11 +10,11 @@
         </classes>
     </test>
 
-    <!--<test name="Make Reservation">
+    <test name="Make Reservation">
         <classes>
             <class name="smoke.MakeReservation"/>
         </classes>
-    </test>-->
+    </test>
 
 
 </suite>
