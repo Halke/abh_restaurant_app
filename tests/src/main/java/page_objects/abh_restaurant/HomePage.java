@@ -45,9 +45,15 @@ public class HomePage extends PageBase {
         return new Restaurants(getDriver());
     }
 
+    //both this and clickAdminDashboard below could use some refactoring.. it would be best if the menu navigation was left to another possibly private method and that only explicit button clicks are exposed to the actual test
     public UserDetails clickUserDetails(int index){
         getNavBarList().get(index).click();
         return new UserDetails(getDriver());
+    }
+
+    public void openAdminDashboard(int index) {
+        getNavBarList().get(index).click();
+
     }
 
     public Boolean checkMainText(String headerText){

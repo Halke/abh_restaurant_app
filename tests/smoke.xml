@@ -1,13 +1,20 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Smoke test" verbose="2">
-    <parameter name="url" value="https://abh-restaurants-dev-days.herokuapp.com"/>
+    <parameter name="url" value="http://localhost:4200"/>
     <parameter name="browser" value="firefox"/>
 
-    <test name="Make Reservation">
+    <test name="Add Free Table">
+        <classes>
+            <class name="smoke.AddFreeTable"></class>
+        </classes>
+    </test>
+
+    <!--<test name="Make Reservation">
         <classes>
             <class name="smoke.MakeReservation"/>
         </classes>
-    </test>
+    </test>-->
+
 
 </suite>

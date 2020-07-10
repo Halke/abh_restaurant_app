@@ -23,6 +23,7 @@ import java.util.concurrent.TimeUnit;
 public class DriverSupport {
     private WebDriver driver;
     private Capabilities capabilities;
+    //Change driverPath to the path for geckodriver on your machine
     private String driverPath = "D:\\DevDays\\gecko\\geckodriver.exe";
 
     public WebDriver initDriver(String browser) {
